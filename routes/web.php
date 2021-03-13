@@ -14,4 +14,6 @@ Route::group(['prefix' => 'admin','as' => 'admin.'], function()
 
     //Categories
     Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');
+    Route::get('categories/create', [CategoryController::class, 'create'])->name('categories.create');
+
 });
